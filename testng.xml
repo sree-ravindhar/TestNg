@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon">
+	<test thread-count="5" name="Electronics">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="Data.TestNG_Example.LaptopTest" />
+			<class name="Data.TestNG_Example.TelevisonTest" />
+			<class name="Data.TestNG_Example.MobileTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
